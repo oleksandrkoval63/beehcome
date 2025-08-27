@@ -1,0 +1,146 @@
+.popup-houses {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 100000000000000000;
+    background-color: rgba(0, 0, 0, 0.6431372549);
+    top: 0;
+    left: 0;
+  }
+  .popup-houses__content {
+    position: relative;
+    -webkit-backdrop-filter: blur(50px);
+            backdrop-filter: blur(50px);
+    background: rgba(36, 36, 36, 0.8);
+    padding: 50px 20px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-y: auto;
+    max-height: 750px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0px 15px;
+    gap: 17px;
+  }
+  .popup-houses__images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 11px;
+    max-width: 526px;
+  }
+  .popup-houses__image {
+    width: 257px;
+  }
+  .popup-houses__image img {
+    width: 100%;
+  }
+  .popup-houses__close {
+    cursor: pointer;
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    top: 15px;
+    right: 15px;
+  }
+  .popup-houses__close img {
+    width: 100%;
+  }
+  .popup-houses__title {
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+  }
+  .popup-houses__subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  .popup-houses__complect {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #87ce15;
+    margin-bottom: 10px;
+  }
+  .popup-houses__list {
+    max-width: 620px;
+  }
+  .popup-houses__list li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .popup-houses__text {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    text-transform: none;
+  }
+  .popup-houses__bold {
+    font-weight: 700;
+  }
+  
+  .green {
+    color: #87ce15;
+  }
+  
+  .bit-image {
+    width: 526px;
+  }
+  
+  @media (max-width: 1250px) {
+    .popup-houses__content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+    .popup-houses__image {
+      width: 250px;
+      text-align: center;
+      margin: 0 auto;
+    }
+    .popup-houses__close {
+      top: 10px;
+      right: 10px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+  @media (max-width: 528px) {
+    .houses {
+      padding: 48px 0px;
+    }
+    .houses__title {
+      font-size: 35px;
+    }
+    .houses__content {
+      gap: 30px;
+    }
+    .item-houses__img img {
+      width: 100%;
+    }
+    .item-houses__title {
+      font-size: 20px;
+    }
+    .item-houses__button {
+      padding: 10px 20px;
+    }
+    .item-houses__link {
+      font-size: 15px;
+    }
+  }
