@@ -1328,14 +1328,12 @@ a {
 
    .contacts__title {
       font-size: 32px;
-      margin-bottom: 180px;
    }
 }
 
 @media (max-width: 538px) {
    .contacts__title {
       font-size: 24px;
-      margin-bottom: 120px;
    }
 
    .contacts__content {
@@ -1436,7 +1434,6 @@ a {
    font-size: 16px;
    line-height: 120%;
    letter-spacing: -0.02em;
-   text-transform: lowercase;
    text-decoration: underline;
    -webkit-text-decoration-skip-ink: none;
    text-decoration-skip-ink: none;
