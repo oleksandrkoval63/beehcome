@@ -44,7 +44,7 @@ function initWatchMore(button) {
    // 2) які елементи ховаємо/показуємо (через data-target)
    const selector = button.dataset.target || ".project-card";
 
-   // 3) скільки показувати спочатку (через data-visible, за замовчуванням 4)
+   // 3) скільки показувати спочатку (через data-visible, за замовчуванням 1)
    const visibleCount = parseInt(button.dataset.visible || "1", 10);
 
    // 4) збираємо елементи саме в межах свого scope
@@ -78,9 +78,20 @@ function initWatchMore(button) {
             expanded ? animateShow(el) : animateHide(el);
          }
       });
-      button.innerHTML = expanded
-         ? '<i class="fas fa-eye-slash"></i> Watch less'
-         : '<i class="fas fa-eye"></i> Watch more';
+      if (button.classList.contains("more-special")) {
+         const shortText = document.querySelector(
+            ".community__text-spec .community__text"
+         );
+         shortText.classList.toggle("active");
+         button.innerHTML = expanded
+            ? "<i></i> Details less"
+            : "<i></i> Details more";
+         button.classList.toggle("active");
+      } else {
+         button.innerHTML = expanded
+            ? '<i class="fas fa-eye-slash"></i> Watch less'
+            : '<i class="fas fa-eye"></i> Watch more';
+      }
       button.setAttribute("aria-expanded", String(expanded));
    });
 }
