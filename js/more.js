@@ -100,5 +100,8 @@ function initWatchMore(button) {
 document.addEventListener("DOMContentLoaded", () => {
    document
       .querySelectorAll(".watch-more-button")
-      .forEach((btn) => initWatchMore(btn));
+      .forEach((btn) => initWatchMore(btn)) ||
+      document
+         .querySelectorAll(".more-special")
+         .forEach((btn) => initWatchMore(btn));
 });

@@ -396,7 +396,7 @@ a {
    overflow: hidden;
    padding-right: 30ch;
 }
-.watch-more-button.more-special {
+.more-special {
    padding-left: 8px;
    font-weight: 700;
    white-space: nowrap;
@@ -411,12 +411,11 @@ a {
 .more-special.active {
    position: absolute;
    right: 35%;
-   top: 45%;
+   top: 50px;
    transform: translate(50%, 0%);
 }
-.watch-more-button.more-special:hover {
-   transform: unset;
-   box-shadow: unset;
+.more-special:hover {
+   cursor: pointer;
 }
 .community__text.special-text {
    font-weight: 700;
@@ -460,7 +459,13 @@ a {
 .more-text {
    display: none;
 }
-
+.footer {
+}
+.footer__container {
+   padding: 20px;
+   background: #007bff;
+   border-radius: 20px 20px 0 0;
+}
 @media (max-width: 768px) {
    .community__container {
       -webkit-box-orient: vertical;
@@ -491,7 +496,7 @@ a {
    }
    .community__title {
       font-size: 25px;
-      text-align: left;
+      text-align: center;
       margin-bottom: 20px;
    }
 }
@@ -1418,18 +1423,14 @@ a {
 }
 .location__right-text {
    -webkit-box-flex: 0;
-   -ms-flex: 0 1 50%;
-   flex: 0 1 50%;
    font-weight: 500;
    font-size: 16px;
    line-height: 120%;
    letter-spacing: -0.02em;
-   color: #007bff;
+   color: #fff;
 }
 .location__link {
    -webkit-box-flex: 0;
-   -ms-flex: 0 1 50%;
-   flex: 0 1 50%;
    font-weight: 500;
    font-size: 16px;
    line-height: 120%;
@@ -1437,7 +1438,7 @@ a {
    text-decoration: underline;
    -webkit-text-decoration-skip-ink: none;
    text-decoration-skip-ink: none;
-   color: #007bff;
+   color: #fff;
 }
 
 @media (max-width: 1250px) {
@@ -1474,7 +1475,7 @@ a {
    .location__texts {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center;
+      justify-content: space-around;
       text-align: center;
    }
 }
@@ -1770,7 +1771,7 @@ a {
    position: relative;
    width: 100%;
    transition: all 0.5s ease;
-   height: 1080px; /* або бажана висота */
+   height: 500px; /* або бажана висота */
    overflow: hidden;
    border-radius: 12px;
    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -2176,7 +2177,7 @@ a {
    .home-title {
       font-size: 52px;
    }
-   .watch-more-button.more-special {
+   .more-special {
       text-align: center;
    }
    .more-special.active {
